@@ -183,3 +183,5 @@ import (
 - ❌ 使用 dot import（`import . "xxx"`），测试和 DSL 场景例外
 - ❌ 空白导入（`_ "xxx"`）不写注释说明用途
 - ❌ CI 中未通过 `golangci-lint` 的 `formatters` 强制 `gci` / `goimports`
+
+避免重命名导入，除非是为了避免命名冲突；好的包名不应需要重命名。如果出现冲突，优先重命名最本地或项目特定的导入
